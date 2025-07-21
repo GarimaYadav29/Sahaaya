@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Requests</title>
+    <link rel="stylesheet" href="styletwo.css">
+</head>
+<body>
+  <header><h1>Food Donation Requests</h1></header>
+    
+<main>
+    <!-- Filter form for searching donations -->
+    <div>
+        <label for="state">State:</label>
+        <input type="text" id="state" placeholder="State">
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="City">
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" placeholder="Pincode">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Display food donations -->
+    <div id="food-donations-container"></div>
+
+    <!-- Modal for accepting request and entering recipient details -->
+    <div id="accept-request-modal" style="display:none;">
+        <h2>Enter Your Details</h2>
+        <form id="accept-request-form">
+            <label for="receiver_name">Your Name:</label>
+            <input type="text" id="receiver_name" required><br>
+
+            <label for="receiver_phone">Phone Number:</label>
+            <input type="text" id="receiver_phone" required><br>
+
+            <label for="receiver_address">Address:</label>
+            <input type="text" id="receiver_address" required><br>
+
+            <label for="receiver_city">City:</label>
+            <input type="text" id="receiver_city" required><br>
+
+            <label for="recipient-state">State:</label>
+            <input type="text" id="receiver_state" required><br>
+
+            <label for="receiver_pincode">Pincode:</label>
+            <input type="text" id="receiver_pincode" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Sahaaya | All rights reserved</p>
+</footer>
+
+    <script src="food_requests.js"></script>
+</body>
+</html>

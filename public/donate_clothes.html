@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Donation Form</title>
+    <link rel="stylesheet" href="donate_food.css">
+</head>
+<body>
+    <header>
+        <h1>Donate Clothes</h1>
+    </header>
+<main>
+    <form action="/donate_book" method="POST">
+        <!-- Food Item Name -->
+        <label for="cloth_name">cloth Name:</label>
+        <input type="text" id="cloth_name" name="cloth_name"required>
+        <br><br>
+
+         <!-- Quantity -->
+         <label for="quantity">Quantity:</label>
+         <input type="number" id="quantity" name="quantity" required>
+         <br><br>
+
+         <label for="target_group">wearable by:</label>
+         <select id="target_group" name="target_group" required>
+             <option value="men">men</option>
+             <option value="women">women</option>
+             <option value="boy kid">kids(boys)</option>
+             <option value="girl kid">kids(girls)</option>
+            
+         </select>
+         <br><br>
+
+         <label for="season">season:</label>
+         <select id="season" name="season" required>
+             <option value="summer">summer</option>
+             <option value="winter">winter</option>
+         </select>
+         <br><br>
+
+         <label for="cloth_condition">cloth condition:</label>
+         <select id="cloth_condition" name="cloth_condition" required>
+             <option value="new">new</option>
+             <option value="used">used</option>
+         </select>
+         <br><br>
+
+        <label for="size">size:</label>
+        <input type="text" id="size" name="size" required>
+        <br><br>
+
+        <!-- Donor Name -->
+        <label for="donor_name">Donor Name:</label>
+        <input type="text" id="donor_name" name="donor_name" required>
+        <br><br>
+
+        <!-- Street Address -->
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br><br>
+
+        <!-- City -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"  required>
+        <br><br>
+
+        <!-- State -->
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"  required>
+        <br><br>
+
+        <!-- Pincode -->
+        <label for="pincode">Pincode:</label>
+        <input type="number" id="pincode" name="pincode"  required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Donation</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2024 Sahaaya | All rights reserved</p>
+</footer>
+
+<script src="donate_clothes.js"></script>
+</body>
+</html>

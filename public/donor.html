@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Page</title>
+    <link rel="stylesheet" href="styletwo.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME DONOR!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login_don.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>What do you want to donate?</h2>
+        <div class="donation-cards">
+            <div class="card" onclick="location.href='donate_food.html'">
+                <h3>FOOD</h3>
+            </div>
+            <div class="card" onclick="location.href='donate_clothes.html'">
+                <h3>CLOTHES</h3>
+            </div>
+            <div class="card" onclick="location.href='donate_books.html'">
+                <h3>BOOKS</h3>
+            </div>
+        </div>
+
+        <h1>Accepted Donations</h1>
+        <div id="accepted-requests-container"></div>
+        <div id="accepted-book-requests-container"></div>
+        <div id="accepted-cloth-requests-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sahaaya | All rights reserved</p>
+    </footer>
+    <script src="donor.js"></script>
+</body>
+</html>
